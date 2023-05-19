@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EVENT HANDLERS</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            background-color: aqua;
+            border: 2px solid black;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #kar {
+            background-color: green;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>THIS IS MY HEADING</h1>
+        <p id="para" onmouseover="chng">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem, non labore inventore
+            necessitatibus consequuntur eligendi quia vitae. Iure, sed. Ipsam ab exercitationem, repellendus in aut
+            optio facilis dolorum obcaecati voluptatibus molestiae placeat illum dicta hic amet vero molestias. Fugiat,
+            aliquid illo quam sequi, nobis est laudantium fugit, libero tempora error porro totam sapiente. Distinctio
+            sunt fuga debitis amet asperiores nam perspiciatis dignissimos, repudiandae quis obcaecati, ab eligendi
+            porro laborum exercitationem voluptas rerum, minima unde at! Rem voluptatem sequi amet, necessitatibus quae
+            dicta tempora enim numquam vero, dignissimos minima aliquam aut, voluptates nam! Voluptates obcaecati quasi
+            minima, fuga reprehenderit quas commodi quod quibusdam, tempora ullam explicabo unde accusantium! Commodi,
+            possimus!</p>
+        <button id="btn" onclick="hide()"> hide</button>
+        <button id="kar" onclick="show()">show</button>
+    </div>
+    <script>
+        /*function hide() {
+            let para = document.getElementById("para");
+            para.style.display = 'none';
+        }
+        function show() {
+            let para = document.getElementById("para");
+            para.style.display = 'block';
+        }*/
+       let para=document.getElementById("para");
+       para.addEventListener('mouseover',function run(){
+        para.style.color="red"
+       });
+       para.addEventListener('mouseout',function run(){
+        para.style.color="blue"
+       });
+        function chng(){
+            let para=document.getElementById("para");
+            if(para.style.color=="black"){
+            }else{
+                para.style.color=="black"
+            }
+
+        }
+    </script>
+</body>
+
+</html>
